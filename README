@@ -1,6 +1,5 @@
 # My linux custom kernel for WSL2
-
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Peredery/custom-kernel-wsl2/releases/download/v5.8/vmlinux58)
 
 My custom linux kernel for WSL2 compatability.
 
