@@ -1,3 +1,54 @@
+# My linux custom kernel for WSL2
+
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
+My custom linux kernel for WSL2 compatability.
+
+#### Current v5.8
+
+  - Fixed memory allocation
+  see: https://lore.kernel.org/kvm/20200211224635.29318.19750.stgit@localhost.localdomain/
+  - Applied config from Microsoft 
+
+#### Todos
+
+ - Upgrade kernel to 5.9 (probably skipped until stable rc 5.10)
+
+# Installation
+
+This is simple guit how to install my kernel
+
+#### 1. First shutdown all wsl containers on Windows
+
+``Open CMD.exe``
+```sh
+$ wsl --shutdown
+```
+#### 2. Download latest realese of my kernel
+Direct link to download last kernel - [5.8 kernel](https://github.com/Peredery/custom-kernel-wsl2/releases/download/v5.8/vmlinux58)
+Move kernel file ``"vmlinux58"`` to ``C:\Users\<YourUser>\``
+
+### 3. Create or edit file ".wslconfig" inside your windows user directory 
+```C:\Users\<YourUser>\.wslconfig```
+```code
+[wsl2]
+kernel=C:\\Users\\<YourUser>\\vmlinux58
+```
+
+### 4. Start your wsl distro
+
+``cmd.exe``
+```cmd
+wsl -d Ubuntu
+```
+
+
+
+
+
+
+
+
 Linux kernel
 ============
 
